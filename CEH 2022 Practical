@@ -46,9 +46,15 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
   for txt file= -L, -P
   $ hydra -l <username> -P <wordlist> IP http-post-form "/loginUrl:username=^USER^&password=^PASS^:F=incorrect" -V
 
-
 5. John the Ripper
-6.
+
+6. SSH
+  SSH connect:
+  $ ssh <username>@IP
+  
+7. FTP
+  FTP Connect
+  $ ftp IP
 
 ## SQL Injection Payloads:
 
