@@ -3,6 +3,12 @@
   
 https://noraj.github.io/haiti/#/pages/usage
 
-##Rockyou Wordlist:
+## Rockyou Wordlist:
  $ /usr/share/wordlists/rockyou.txt
  
+## Crypto Indentifier:
+ 1. https://hashes.com/en/tools/hash_identifier
+ 2. https://www.tunnelsup.com/hash-analyzer
+Linux: $ hash-identifier   -Enter and paste the hash.
+
+##
