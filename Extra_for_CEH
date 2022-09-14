@@ -2,3 +2,7 @@
   $ haiti -e <crypto_hash>
   
 https://noraj.github.io/haiti/#/pages/usage
+
+##Rockyou Wordlist:
+ $ /usr/share/wordlists/rockyou.txt
+ 
