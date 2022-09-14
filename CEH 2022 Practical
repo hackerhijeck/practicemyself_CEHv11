@@ -47,7 +47,9 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
   $ hydra -l <username> -P <wordlist> IP http-post-form "/loginUrl:username=^USER^&password=^PASS^:F=incorrect" -V
 
 5. John the Ripper
-
+  $ john -format=raw-md5 hash.txt
+  $ john -format=<hashformat> hash.txt
+  
 6. SSH
   SSH connect:
   $ ssh <username>@IP
