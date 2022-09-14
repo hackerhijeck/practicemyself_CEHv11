@@ -18,9 +18,10 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
 
 ## Important Tools and Commands:
 1. Nmap:
-
-
-
+  $ nmap -sV -sC -O <IP>
+  
+  -iL = import txt  -oX = output   --top-ports 1000 = UDP 1000 scan   -sU = UDP scan   -sT = TCP scan 
+  
 2. SQLmap
   for url= -u
   for txtfile= -r
