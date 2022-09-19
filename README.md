@@ -63,3 +63,4 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
   $ ftp IP
 
 ## SQL Injection Payloads:
+x
