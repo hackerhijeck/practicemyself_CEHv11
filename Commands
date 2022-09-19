@@ -1,2 +1,0 @@
-## UDP Check your local system:
-   $ lsof -i -n -P | grep UDP
