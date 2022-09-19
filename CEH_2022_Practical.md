@@ -17,13 +17,13 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
 15.
 
 ## Important Tools and Commands:
-1. Nmap:
+## Nmap:
   
   $nmap -sV -sC -O <IP>
   
   -iL = import txt  -oX = output   --top-ports 1000 = UDP 1000 scan   -sU = UDP scan   -sT = TCP scan 
   
-2. SQLmap:
+## SQLmap:
   
   for url= -u    for txtfile= -r
   
@@ -33,14 +33,14 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
   
   $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename -T tables name --dump
 
-3. WPscan:
+## WPscan:
   $ wpscan --url http://test.com --enumerate u --enumerate p
   
   $ wpscan --url http://test.com --usernames user.txt --passwords pass.txt
   
   Other Commands: --random-agent, 
 
-4. Hydra:
+## Hydra:
   
   FTP Bruteforce:
   
@@ -58,24 +58,22 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
   
   $ hydra -l <username> -P <wordlist> IP http-post-form "/loginUrl:username=^USER^&password=^PASS^:F=incorrect" -V
 
-5. John the Ripper
+## John the Ripper
   
   $ john -format=raw-md5 hash.txt
   
   $ john -format=<hashformat> hash.txt
   
-6. SSH
+## SSH
   
   SSH connect:
   
   $ ssh <username>@IP
   
-7. FTP
+## FTP
   
   FTP Connect
   
   $ ftp IP
 
 ## SQL Injection Payloads:
-
-
