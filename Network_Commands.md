@@ -15,7 +15,9 @@
 *Who trying talking to you?
 
  $ netstat -a # (show all active connections) (servers)
+ 
  $ netstat -n # (hosts)
+ 
  $ netstat -b # (Show binaries Windows)
  
 ## Traceroute
@@ -25,6 +27,7 @@
         The time in TTL refers to hops, not seconds or minutes.
         TTL=1 is the first router.
         TTL=2 is the second router, and so on.
+        
 *As shown above, on HOP 2 the TTL exceeded and back to the device A, counting 3 on TTL for the next HOP.
  
  $ traceroute google.com
@@ -45,7 +48,7 @@
 ## nslookup
 *Query Internet name servers interactively; check if the DNS server is working
 
- $ nslookup www.certifiedhacker.com
+ $ nslookup www.google.com
 
 ## tcpdump
 *Tcpdump is a data-network packet analyzer computer program that runs under a command line interface. It allows the user to display TCP/IP and other
