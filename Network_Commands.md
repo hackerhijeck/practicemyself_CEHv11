@@ -1,13 +1,17 @@
 ## Ping:
 *Can be handful for DNS checks (up / or down) | is a DNS tool to resolves web addresses to an IP address.
+
 *Test reachability - determine round-trip time, and uses ICMP protocol
  
  $ ping www.google.com 
 
 ## Netstat:
 *Network statistics
+
 *Get info on host system TCP / UDP connections and status of all open and listening ports and routing table.
+
 *Who you talking to?
+
 *Who trying talking to you?
 
  $ netstat -a # (show all active connections) (servers)
@@ -16,6 +20,7 @@
  
 ## Traceroute
 *Traceroute - how packets get from host to another endpoint. Traceroute is helpful to see what routers are being hit, both internal and external.
+
 *Take advantage of ICMP Time to Live (TTL) Exceeded error message
         The time in TTL refers to hops, not seconds or minutes.
         TTL=1 is the first router.
@@ -26,7 +31,9 @@
 
 ## arp
 *Address resolution protocol - caches of ip-to-ethernet
+
 *Determine a MAC address based on IP addresses
+
 *option -a: view local ARP table
  
  $ arp -a
