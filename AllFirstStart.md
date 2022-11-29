@@ -31,6 +31,21 @@ set USERNAME admin
 ### 7. Prints the route that a packet takes to reach the host
   $ traceroute google.com
 
+### 8. Android
+```
+  $ netdiscover -r IP/24   (got final IP)
+  $ nmap -O IP
+```
+
+### 9. Stegography
+  ```
+  $ Snow.exe -C -p “given_password” file_name.txt
+  -C  compressing / uncompressing
+  -p  password
+
+  Open Stego 
+  GUI tool
+  ```
 
 ## 10. Used Tools
 ```
