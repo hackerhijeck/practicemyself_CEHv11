@@ -35,6 +35,13 @@ set USERNAME admin
 ```
   $ netdiscover -r IP/24   (got final IP)
   $ nmap -O IP
+  
+  apt install adb
+  pip install colorama
+  git clone https://github.com/aerosol-can/PhoneSploit
+  cd PhoneSploit
+  python3 phonesploit.py
+  select 3 to connect new phone
 ```
 
 ### 9. Stegography
