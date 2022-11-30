@@ -14,7 +14,8 @@
   $ Net user
 
 ### 5. Wordlist location find
-  $ locate wordlists
+ ```
+ $ locate wordlists
   $ locae rockyou.txt
 
 ### 5. WP scan (Wp Vulnerability)
