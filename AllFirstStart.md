@@ -13,6 +13,10 @@
 ### 4. Windows Comman Line
   $ Net user
 
+### 5. Wordlist location find
+  $ locate wordlists
+  $ locae rockyou.txt
+
 ### 5. WP scan (Wp Vulnerability)
   $ wpscan --url IP --enumerate u
 ```  
@@ -42,18 +46,42 @@ set USERNAME admin
   cd PhoneSploit
   python3 phonesploit.py
   select 3 to connect new phone
+  Add IP address of android device
+  4 (Access shell on phone)
+  IP address again of android device
+  pwd > ls > cd sdcard > ls > cd downloads > cat file.txt
 ```
-
 ### 9. Stegography
   ```
-  $ Snow.exe -C -p “given_password” file_name.txt
+  $ Snow.exe -C -p “given_password” file_name.txt  (Pass tu hobo = 'test')
   -C  compressing / uncompressing
   -p  password
 
-  Open Stego 
-  GUI tool
-  ```
+  Open Stego (GUI tool):
+     Open the exe > open and select file > click get
+ ```
+### 10. Cryptography
+```
+#### Identify:
+https://hashes.com/en/tools/hash_identifier
+https://www.onlinehashcrack.com/hash-identification.php
+https://www.tunnelsup.com/hash-analyzer
+#### Crak hash:
+https://hashes.com/en/decrypt/hash
+https://crackstation.net
 
+  $ hash-identifier
+  $ Hashcat -a 3 -m 900 hash.txt /rockyou.txt
+  
+  -a attack mode (3)
+  -m hashtype (select number fom below)
+   900 = md4
+   1800 = SHA512CRYPT
+   110  = SHA1 with SALT HASH
+   0  = MD5
+   100 = SHA1
+   1400 = SHA256
+   
 ## 10. Used Tools
 ```
 Veracrypt
