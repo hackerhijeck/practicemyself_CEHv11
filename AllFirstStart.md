@@ -15,12 +15,13 @@
 
 ### 5. Wordlist location find
  ```
- $ locate wordlists
- $ locae rockyou.txt
+  $ locate wordlists
+  $ locae rockyou.txt
 ```
 ### 6. WP scan (Wp Vulnerability)
+```
   $ wpscan --url IP --enumerate u
-```  
+ 
  => msfconsole 
 use axiliary/scanner/http/wordpress_login_enum
 PASS_FILE /root/Desktop/wordlists/Pass.txt
@@ -71,8 +72,9 @@ https://www.tunnelsup.com/hash-analyzer
 https://hashes.com/en/decrypt/hash
 https://crackstation.net
 
-  $ hash-identifier
+  $ hash-identifier  ->Enter and paste the hash.
   $ Hashcat -a 3 -m 900 hash.txt /rockyou.txt
+  $ haiti -e <crypto_hash>    (https://noraj.github.io/haiti/#/pages/usage)
   
   -a attack mode (3)
   -m hashtype (select number fom below)
@@ -83,7 +85,7 @@ https://crackstation.net
    100 = SHA1
    1400 = SHA256
   ``` 
-## 10. Used Tools
+## 12. Used Tools
 ```
 Veracrypt
 Cryptool
