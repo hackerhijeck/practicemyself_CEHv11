@@ -83,4 +83,8 @@ admin'/*
 ### wireshark
 https://unit42.paloaltonetworks.com/using-wireshark-display-filter-expressions/
 
-### 
+### Root privilege Escln
+  ```
+  $ sudo man man
+  $ !/bin/bash
+```
