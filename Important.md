@@ -54,6 +54,8 @@ cryptool
 BCtextencoder
 hash calc
 veracrypt
+
+https://book.thegurusec.com/certifications/certified-ethical-hacker-practical/cryptography
 ```
 ### SQL payloads
 ```
