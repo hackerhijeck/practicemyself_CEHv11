@@ -48,4 +48,9 @@ which http request has vulnerability?
 ```
 $ use owaspzap  GET/POST
 ```
-###
+### Cryptography
+```
+cryptool
+BCtextencoder
+hash calc
+veracrypt
