@@ -2,9 +2,11 @@
  ```
   $ ip addr
   $ netdiscover
+  $ netdiscover -i eth0   (confirm from ifconfig which net/wifi using)
+  $ netdiscover -r IP  
  ```
 ### 2. Nmap scan all
-  $ nmap IP -sV -sC -p -O
+  $ nmap IP -sV -sC -p -O -oN output.txt
   
 ### 3. IPs Service, RDP(3389), SQL(3306), FTP(21) check
  ```
