@@ -54,6 +54,7 @@ cryptool
 BCtextencoder
 hash calc
 veracrypt
+```
 ### SQL payloads
 ```
 admin' --
