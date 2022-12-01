@@ -1,6 +1,8 @@
 ### 1. Find the IP target.
+ ```
   $ ip addr
-  
+  $ netdiscover
+ ```
 ### 2. Nmap scan all
   $ nmap IP -sV -sC -p -O
   
