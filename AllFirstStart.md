@@ -1,7 +1,7 @@
 ### 1. Find the IP target.
  ```
   $ ip addr
-  $ netdiscover
+  $ netdiscover  (If not found $ apt-get install netdiscover)
   $ netdiscover -i eth0   (confirm from ifconfig which net/wifi using)
   $ netdiscover -r IP  
  ```
