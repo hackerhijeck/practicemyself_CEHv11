@@ -3,11 +3,14 @@
   $ ip addr
   $ netdiscover  (If not found $ apt-get install netdiscover)
   $ netdiscover -i eth0   (confirm from ifconfig which net/wifi using)
-  $ netdiscover -r IP  
+  $ netdiscover -r IP/24  
  ```
 ### 2. Nmap scan all
+  ```
   $ nmap IP -sV -sC -p -O -oN output.txt
   
+  -iL=import IPs,  --top-ports 1000
+  ```
 ### 3. IPs Service, RDP(3389), SQL(3306), FTP(21) check
  ```
   $ nmap -Pn -p 3389 IP | grep open
@@ -25,6 +28,8 @@
 ### 6. WP scan (Wp Vulnerability)
 ```
   $ wpscan --url IP --enumerate u
+  
+  --enumerate p, -U username, -P password, --usernames userlist.txt, --passwords passwdlist.txt
  
  => msfconsole 
 use axiliary/scanner/http/wordpress_login_enum
