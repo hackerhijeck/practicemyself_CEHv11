@@ -116,9 +116,8 @@ Severity: Low        Severity: Medium           Severity: High
 1; id                1& net user                || net user
 1; net user
 | ls
-```
-#### Others cmd: 
-```
+
+ Others low Severity cmd: 
 | hostname
 | whoami
 | dir C:\path.txt
