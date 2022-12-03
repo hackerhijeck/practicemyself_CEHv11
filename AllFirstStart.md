@@ -109,4 +109,22 @@ Winscp
 OWASP ZAP  
 RDP
 ```
-### 13. 
+### 13. Command Injection
+Severity: Low
+```
+1; ls
+1; id
+1; net user
+```
+Severity: Medium
+```
+1& ls
+1& net user
+```
+Severity: High
+```
+|| ls
+|| net user
+```
+
+
