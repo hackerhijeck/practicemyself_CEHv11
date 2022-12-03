@@ -82,9 +82,8 @@ https://hashes.com/en/decrypt/hash
 https://crackstation.net
 
   $ hash-identifier  ->Enter and paste the hash.
-  $ Hashcat -a 3 -m 900 hash.txt /rockyou.txt
   $ haiti -e <crypto_hash>    (https://noraj.github.io/haiti/#/pages/usage)
-  
+  $ Hashcat -a 3 -m 900 hash.txt /rockyou.txt
   -a attack mode (3)
   -m hashtype (select number fom below)
    900 = md4
@@ -96,7 +95,7 @@ https://crackstation.net
   ``` 
 ## 12. Used Tools
 ```
-Veracrypt
+Veracrypt = Encryt / Decrypt the Hidden Disk 
 Cryptool
 Snow
 Bctextencoder
@@ -110,3 +109,4 @@ Winscp
 OWASP ZAP  
 RDP
 ```
+### 13. 
