@@ -110,21 +110,11 @@ OWASP ZAP
 RDP
 ```
 ### 13. Command Injection
-Severity: Low
-```
-1; ls
-1; id
-1; net user
-```
-Severity: Medium
-```
-1& ls
-1& net user
-```
-Severity: High
-```
-|| ls
-|| net user
+Severity: Low        Severity: Medium           Severity: High
+```           
+1; ls                1& ls                      || ls
+1; id                1& net user                || net user
+1; net user    
 ```
 
 
