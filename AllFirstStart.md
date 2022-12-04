@@ -28,9 +28,10 @@
 ### 6. WP scan (Wp Vulnerability)
 ```
   $ wpscan --url IP --enumerate u
+  $ wpscan --url IP -U root --passwords passwdfile.txt
   
   --enumerate p, -U username, -P password, --usernames userlist.txt, --passwords passwdlist.txt
- 
+ Using Metasploit==>
  => msfconsole 
 use axiliary/scanner/http/wordpress_login_enum
 PASS_FILE /root/Desktop/wordlists/Pass.txt
