@@ -18,9 +18,13 @@ H.M-১৯ Android
  IP 172.16.0.38
    1876890
 ```
-
 ### FTP Burteforce:
 pass wordlist in the windows system. After the login FTP server
+
+#### SECRET file
+
+“SECRET.txt” using a backdoor that was installed in the server. Enter the secret number hidden in the file. 
+Ans: Path: C:\Users\Administrator\Documents\Findme
 
 ### SQL payloads
 ```
