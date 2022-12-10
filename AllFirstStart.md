@@ -151,4 +151,12 @@ Successfully created the "Test" user account.
   $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename --tables
   $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename -T tables name --dump
 ```
-### 15. 
+### 15. Wireshark
+```
+Filters:
+To find DOS (SYN and ACK) : tcp.flags.syn == 1, tcp.flags.syn == 1 and tcp.flags.ack == 0
+To find passwords : http.request.method == POST
+
+https://www.comparitech.com/net-admin/wireshark-cheat-sheet/
+https://www.hackers-arise.com/post/2018/09/27/network-forensics-part-2-detecting-and-analyzing-a-scada-dos-attack
+```
