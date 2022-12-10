@@ -28,7 +28,7 @@
 ### 6. WP scan (Wp Vulnerability)
 ```
   $ wpscan --url IP --enumerate u
-  $ wpscan --url IP -U root --passwords passwdfile.txt
+  $ wpscan --url IP -u root -P passwdfile.txt
   
   --enumerate p, -U username, -P password, --usernames userlist.txt, --passwords passwdlist.txt
  Using Metasploit==>
