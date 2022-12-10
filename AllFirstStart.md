@@ -156,6 +156,7 @@ Successfully created the "Test" user account.
 Filters:
 To find DOS (SYN and ACK) : tcp.flags.syn == 1, tcp.flags.syn == 1 and tcp.flags.ack == 0
 To find passwords : http.request.method == POST
+     Shortcut: Click tools > Credentials
 
 https://www.comparitech.com/net-admin/wireshark-cheat-sheet/
 https://www.hackers-arise.com/post/2018/09/27/network-forensics-part-2-detecting-and-analyzing-a-scada-dos-attack
