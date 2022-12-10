@@ -61,6 +61,9 @@ set USERNAME admin
 ```
 FTP Connect
   $ ftp IP
+ 
+https://www.javatpoint.com/ftp-commands
+https://www.serv-u.com/linux-ftp-server/commands
 ```
 ### 9. Prints the route that a packet takes to reach the host
   $ traceroute google.com
