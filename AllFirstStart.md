@@ -131,8 +131,15 @@ Winscp
 OWASP ZAP  
 RDP
 ```
-### 14. Command Injection
+### 14. Command Injection (DVWA)
 ```
+DVWA:
+Path: C:\wamp64\www\DVWA\hackable\uploads\maybefile
+
+View a file cmd: "type"
+Decrypt - https://hashes.com/en/decrypt/hash
+
+
 Severity: Low        Severity: Medium           Severity: High          
 1; ls                1& ls                      || ls
 1; id                1& net user                || net user
