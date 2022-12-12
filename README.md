@@ -5,9 +5,5 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
 
 
 ###Marks:
-```
-Wireshark =  3
-SQL = 1
-Nmap = 2-3
 
-```
+I will update soon --->
