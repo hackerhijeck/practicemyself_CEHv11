@@ -86,7 +86,7 @@ https://www.serv-u.com/linux-ftp-server/commands
 ```
 ### 11. Stegnography
   ```
-  $ Snow.exe -C -p “given_password” file_name.txt  (Pass tu hobo = 'test')
+  $ Snow.exe -C -p “given_password” file_name.txt
   -C  compressing / uncompressing
   -p  password
 
