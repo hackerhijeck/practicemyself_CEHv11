@@ -2,7 +2,7 @@
 
 # .......................................... CEHvs11 ...........................................
 
-I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. If any suggetions to me just connect with twitter and dm me. Thank You.
+I have recently passed the CEH Practical exam from EC-council in December 2022. I have prepared myself,  hope it will be help full to all of you guys. If any suggetions to me just connect with twitter and dm me. Thank You.
 
 
 ### Marks:
