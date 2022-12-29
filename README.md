@@ -101,7 +101,7 @@ When I was first connect from the parot server, I did'nt get the file. So I have
 https://www.javatpoint.com/ftp-commands
 https://www.serv-u.com/linux-ftp-server/commands
 ```
-### 10. Android
+### 9. Android
 ```
   $ netdiscover -r IP/24   (got final IP)
   $ nmap IP -sV -p 5555
@@ -112,7 +112,7 @@ https://www.serv-u.com/linux-ftp-server/commands
   $ adb shell
   pwd > ls > cd sdcard > ls > cd downloads > cat file.txt
 ```
-### 11. Stegnography
+### 10. Stegnography
   ```
   $ Snow.exe -C -p “given_password” file_name.txt
   -C  compressing / uncompressing
@@ -121,7 +121,7 @@ https://www.serv-u.com/linux-ftp-server/commands
   Open Stego (GUI tool):
      Open the exe > open and select file > click get
  ```
-### 12. Cryptography
+### 11. Cryptography
 ```
 #### Identify:
 https://hashes.com/en/tools/hash_identifier
@@ -142,7 +142,7 @@ https://crackstation.net
    100 = SHA1
    1400 = SHA256
   ``` 
-## 13. Used Tools
+## 12. Used Tools
 ```
 Veracrypt = Encryt / Decrypt the Hidden Disk 
 Cryptool
@@ -157,7 +157,7 @@ Wireshark
 OWASP ZAP  
 RDP
 ```
-### 14. Command Injection (DVWA)
+### 13. Command Injection (DVWA)
 ```
 DVWA:
 Path: C:\wamp64\www\DVWA\hackable\uploads\maybefile
@@ -165,7 +165,7 @@ Path: C:\wamp64\www\DVWA\hackable\uploads\maybefile
 View a file cmd: "type"
 Decrypt - https://hashes.com/en/decrypt/hash
 ```
-### 15 SQL Injection with SQLmap:
+### 14 SQL Injection with SQLmap:
   ```
   $ sqlmap -u http://site.com?id=1 --cookie="cookies" --risk 3 --level 5 --dbms=mysql --dbs
   $ sqlmap -u "http://site.com/sqli/?id=1&Submit=Submit" --cookie="cookies1;cookies2" --data="data" --risk 3 -level 5 --dbms=mysql --dbs
@@ -174,7 +174,7 @@ Decrypt - https://hashes.com/en/decrypt/hash
   $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename --tables
   $ sqlmap -r test.txt --batch --risk 3 --level 4 -D databasename -T tables name --dump
 ```
-### 16. Wireshark
+### 15. Wireshark
 ```
 Filters:
 To find DOS (SYN and ACK) : tcp.flags.syn == 1, tcp.flags.syn == 1 and tcp.flags.ack == 0
