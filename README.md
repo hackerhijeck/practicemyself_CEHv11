@@ -6,9 +6,18 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
 
 
 ### Marks:
-
-I will update soon --->
-
+---
+SQL= 2
+Net User= 1
+Nmap= 2 to find OS
+Wireshark= 3
+FTP= 2
+Wordpress= 1
+Secret File= 1 
+Android= 1
+Crypto=6
+Stegnography= 1
+---
 
 So let's start >>>>>>
 
