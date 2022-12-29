@@ -6,7 +6,7 @@ I'm Preparing CEH Practical V11. hope it will be help full to all of you guys. I
 
 
 ### Marks:
----
+```
 SQL= 2
 Net User= 1
 Nmap= 2 to find OS
@@ -17,7 +17,7 @@ Secret File= 1
 Android= 1
 Crypto=6
 Stegnography= 1
----
+```
 
 So let's start >>>>>>
 
