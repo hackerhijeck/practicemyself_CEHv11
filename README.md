@@ -187,5 +187,5 @@ https://www.hackers-arise.com/post/2018/09/27/network-forensics-part-2-detecting
 
 
 # Also Remind Google is your Best Friend
-##    Everythings are availble on Google
-###      Good Luck 👍
+  ## Everythings are availble on Google
+       ### Good Luck 👍
