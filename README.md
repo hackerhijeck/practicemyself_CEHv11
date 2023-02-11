@@ -108,7 +108,7 @@ https://www.serv-u.com/linux-ftp-server/commands
   
   apt install adb (if not available
   Command:
-  $ apt connect IP:5555
+  $ adb connect IP:5555
   $ adb shell
   pwd > ls > cd sdcard > ls > cd downloads > cat file.txt
 ```
