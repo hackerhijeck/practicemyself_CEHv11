@@ -1,4 +1,5 @@
 ## DVWA Set up with kali linux:
+Use Method 2
 
 ### Method 1
 #### In linux root:
