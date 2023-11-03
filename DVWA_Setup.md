@@ -1,6 +1,7 @@
 ## DVWA Set up with kali linux:
 
-### In linux root:
+### Method 1
+#### In linux root:
 ```
 $ cd /var/www/html
 $ git clone https://github.com/digininja/DVWA 
@@ -18,5 +19,24 @@ $ service start apache2
 $ nano /etc/php/8.1/apache2/php.ini
 
   Ctrl+w type "fopen" and change the "off" to "on"  (allow_url_include = on)
-  
+```
+### Method 2
+#### In linux root:
+```
+$ cd /var/www/html
+$ git clone https://github.com/digininja/DVWA
+$ mv DVWA dvwa
+$ chown -R www-data:www-data dvwa
+$ cd dvwa/config
+$ cp config.inc.php.dist config.inc.php
+$ nano config.inc.php
+	change the user name and password
+$ sudo service mysql start
+$ mysql -u root
+	CREATE DATABASE dvwa;
+	CREATE USER 'admin'@'127.0.0.1' IDENTIFIED BY 'password';
+	GRANT ALL PRIVILEGES ON dvwa.* TO 'admin'@'127.0.0.1';
+$ service apache2 start
+$ nano /etc/php/8.2/apache2/php.ini
+  Ctrl+w type "fopen" and change the "off" to "on"  (allow_url_include = on)
 ```
